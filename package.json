@@ -1,0 +1,41 @@
+{
+  "name": "recharge",
+  "version": "1.0.0",
+  "author": "Oindril Dutta",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "pg": "^7.8.1",
+    "pg-promise": "^8.5.6",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "styled-components": "^4.1.3"
+  },
+  "scripts": {
+    "start": "npm run build && npm run start_server",
+    "serve": "node server.js",
+    "develop": "npm run start_app & nodemon server.js",
+    "start_server": "nodemon server.js",
+    "start_app": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "chokidar": "^2.1.2",
+    "nodemon": "^1.18.10"
+  }
+}
