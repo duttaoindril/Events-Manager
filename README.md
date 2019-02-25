@@ -27,7 +27,7 @@
   - Exit with: `\q`
 - Restore data from dump into created database: `psql recharge < data.pgdump`
 - Index and Cluster the events and locations tables:
-- Events Table start_date and end_date Btree Index: 
+  - Events Table start_date and end_date Btree Index: 
     `CREATE INDEX start_end_time_btree
         ON public.events USING btree
         (start_date DESC NULLS LAST, end_date DESC NULLS LAST)
