@@ -69,3 +69,4 @@ I do realize there are much better ways of doing this, such as putting this inst
 - I also could of used React Hooks/React-Redux, but I decided to keep it simple, mainly for time, and to avoid any unexpected behavior
 - I simply made attendance a local state thing, so if you refresh a website after attending, it forgets that you attended that but it does handle the counts properly
 - I did not have the time or desire to make it responsive; If there was a better way to lay out the data that somebody designed for me - or if this was a purely frontend assignment, I would’ve done that, potentially using cards instead of tables
+- I made the attendance handler event a GET; I know that's not RESTful and I would never do that in production, I know there's tons of reasons why, but I just did for the sake of time. (On the client side)
