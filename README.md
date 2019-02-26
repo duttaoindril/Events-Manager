@@ -7,6 +7,8 @@
 - I used Node JS + Express + Node Postgres instead of a python/django/flask setup in the interest of the 6 hour deadline, and React to speed up development and use Material UI
   - Sadly, vagrant made it very difficult to do hot code reloading, slowing down development time considerably.
 - I had to append values into the pgdump for locations table name column; some columns had missing data making it so that the entire table did not get loaded. I also used clustering as means for sorting the data, so  for best results, please cluster. I also assumed primary key id as the unique value to do everything by, since there was no seperate events_id / guid in the events table.
+- I had to configure the vagrant file with this change `config.vm.network "private_network", ip: "192.168.50.4"` so that I can open it even through the Vagrant and open the website and server.
+
 
 # Setup
 
